@@ -1,3 +1,10 @@
+import { Hero } from "./Hero/Hero";
+import backgroundImg from "../assets/asia.jpg";
+
 export const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Hero img={backgroundImg} />
+    </>
+  );
 };
