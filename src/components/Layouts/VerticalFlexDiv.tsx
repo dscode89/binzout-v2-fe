@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-export const HorizontalFlexDiv = styled.div<{
+export const VerticalFlexDiv = styled.div<{
   $justify: string;
   $align: string;
   $paddingX: string;
   $paddingY: string;
   $marginX?: number;
   $marginY?: number;
+  $widthPixels?: boolean;
+  $width: number;
 }>`
   display: flex;
+  flex-direction: column;
   justify-content: ${(props) => props.$justify};
   align-items: ${(props) => props.$align};
   padding: ${(props) => `${props.$paddingY}em ${props.$paddingX}em`};
@@ -16,5 +19,7 @@ export const HorizontalFlexDiv = styled.div<{
     props.$marginX && props.$marginY
       ? `${props.$marginX}em ${props.$marginY}em`
       : null};
-  border: 1px solid red;
+  border: 1px solid green;
+  width: ${(props) =>
+    props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
 `;
