@@ -14,7 +14,7 @@ export const DrawerList = () => {
     >
       {navItems.map((item: string) => {
         return (
-          <NavItem $marginY="1" $marginX="0">
+          <NavItem $marginY="1" $marginX="0" href={`/${item}`}>
             {item}
           </NavItem>
         );

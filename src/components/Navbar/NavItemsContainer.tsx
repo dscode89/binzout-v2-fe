@@ -22,7 +22,12 @@ export const NavItemsContainer = () => {
         >
           <MenuIcon />
         </IconButton>
-        <Drawer open={openDrawer} anchor="right">
+        <Drawer
+          open={openDrawer}
+          anchor="right"
+          role="presentation"
+          onClose={() => setOpenDrawer(false)}
+        >
           <DrawerList />
         </Drawer>
       </>
@@ -38,7 +43,7 @@ export const NavItemsContainer = () => {
     >
       {navItems.map((item: string) => {
         return (
-          <NavItem $marginX="1" $marginY="0">
+          <NavItem $marginX="1" $marginY="0" href={`/${item}`}>
             {item}
           </NavItem>
         );
