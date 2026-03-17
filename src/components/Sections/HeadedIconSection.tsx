@@ -45,7 +45,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                 $marginY={0}
               >
                 <img src={i.icon} alt="an icon" width="75px" />
-                <Paragraph $fontSize={1} $fontWeight={400} $margin={0.3}>
+                <Paragraph $fontSize={1} $fontWeight={700} $margin={0.3}>
                   {i.iconText}
                 </Paragraph>
               </VerticalFlexDiv>
@@ -67,7 +67,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                 $marginY={0}
               >
                 <img src={i.icon} alt="an icon" width="75px" />
-                <Paragraph $fontSize={1} $fontWeight={400} $margin={0.3}>
+                <Paragraph $fontSize={1} $fontWeight={700} $margin={0.3}>
                   {i.iconText}
                 </Paragraph>
               </VerticalFlexDiv>
