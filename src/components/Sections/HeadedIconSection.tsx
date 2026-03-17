@@ -1,4 +1,5 @@
 import { useWindowDimensions } from "../../hooks/usewindowDimensions";
+import { Divider } from "../Layouts/Divider";
 import { HorizontalFlexDiv } from "../Layouts/HorizontalFlexDiv";
 import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { Paragraph } from "../Typography/Paragraph";
@@ -21,7 +22,13 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
       $width={90}
     >
       {width > 500 ? (
-        <Paragraph $fontSize={1.7} $fontWeight={500} $margin={1}>
+        <Paragraph
+          $fontSize={2}
+          $fontWeight={600}
+          $margin={1}
+          $color="#000000"
+          $fontFamily="Cabin Sketch"
+        >
           {title}
         </Paragraph>
       ) : null}
@@ -48,7 +55,13 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                 $marginY={0}
               >
                 <img src={i.icon} alt="an icon" width="75px" />
-                <Paragraph $fontSize={1} $fontWeight={700} $margin={0.3}>
+                <Paragraph
+                  $fontSize={1}
+                  $fontWeight={600}
+                  $margin={0.3}
+                  $color="#000000"
+                  $fontFamily="Cabin Sketch"
+                >
                   {i.iconText}
                 </Paragraph>
               </VerticalFlexDiv>
@@ -70,9 +83,21 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                 $marginY={0}
               >
                 <img src={i.icon} alt="an icon" width="75px" />
-                <Paragraph $fontSize={1} $fontWeight={700} $margin={0.3}>
+                <Paragraph
+                  $fontSize={1}
+                  $fontWeight={600}
+                  $margin={0.3}
+                  $color="#000000"
+                >
                   {i.iconText}
                 </Paragraph>
+
+                <Divider
+                  $width={80}
+                  $bgColor="#966fd6"
+                  $marginX={1}
+                  $height={1}
+                />
               </VerticalFlexDiv>
             );
           })}

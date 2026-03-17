@@ -5,6 +5,9 @@ import { HeadedIconSection } from "./Sections/HeadedIconSection";
 import binImage from "../assets/Bin-1--Streamline-Ultimate.svg";
 import calendarImage from "../assets/Calendar-1--Streamline-Ultimate.svg";
 import moneyImage from "../assets/Money-Bag-Dollar--Streamline-Ultimate.svg";
+import { Paragraph } from "./Typography/Paragraph";
+import rightArrow from "../assets/Controls-Forward--Streamline-Ultimate.svg";
+import { InstructionsSection } from "./Sections/InstructionsSection";
 
 export const Home = () => {
   return (
@@ -13,8 +16,8 @@ export const Home = () => {
       <HorizontalFlexDiv
         $align="center"
         $justify="center"
-        $paddingX="1"
-        $paddingY="1"
+        $paddingX="3"
+        $paddingY="3"
         $widthPixels={false}
         $width="80%"
         $centered
@@ -37,6 +40,7 @@ export const Home = () => {
           ]}
         />
       </HorizontalFlexDiv>
+      <InstructionsSection />
     </>
   );
 };

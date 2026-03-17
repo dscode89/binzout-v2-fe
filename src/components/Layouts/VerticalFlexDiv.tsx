@@ -9,8 +9,10 @@ export const VerticalFlexDiv = styled.div<{
   $marginY?: number;
   $widthPixels?: boolean;
   $width: number;
+  $backgroundColor?: string;
 }>`
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: ${(props) => props.$justify};
   align-items: ${(props) => props.$align};
@@ -21,4 +23,6 @@ export const VerticalFlexDiv = styled.div<{
       : null};
   width: ${(props) =>
     props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
+  background-color: ${(props) =>
+    props.$backgroundColor ? props.$backgroundColor : "inherit"};
 `;

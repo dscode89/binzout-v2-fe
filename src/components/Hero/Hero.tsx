@@ -1,4 +1,4 @@
-import { HeroImg } from "../images/HeroImg";
+import { HeroImg } from "../Images/HeroImg";
 
 interface HeroProps {
   img: string;

@@ -10,6 +10,7 @@ export const HorizontalFlexDiv = styled.div<{
   $widthPixels?: boolean;
   $width: string;
   $centered?: boolean;
+  $backgroundColor?: string;
 }>`
   display: flex;
   justify-content: ${(props) => props.$justify};
@@ -23,5 +24,7 @@ export const HorizontalFlexDiv = styled.div<{
         : null};
 
   width: ${(props) =>
-    props.$widthPixels ? `${props.$width}px` : `${props.$width}`};
+    props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
+  background-color: ${(props) =>
+    props.$backgroundColor ? props.$backgroundColor : "inherit"};
 `;
