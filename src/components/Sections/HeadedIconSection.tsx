@@ -20,10 +20,13 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
       $widthPixels={false}
       $width={90}
     >
-      <Paragraph $fontSize={1.7} $fontWeight={500} $margin={1}>
-        {title}
-      </Paragraph>
-      {width > 860 ? (
+      {width > 500 ? (
+        <Paragraph $fontSize={1.7} $fontWeight={500} $margin={1}>
+          {title}
+        </Paragraph>
+      ) : null}
+
+      {width > 1020 ? (
         <HorizontalFlexDiv
           $widthPixels={false}
           $width="100%"
