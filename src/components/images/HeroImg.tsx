@@ -5,4 +5,5 @@ export const HeroImg = styled.div<{ $img: string }>`
   height: 600px;
   background-image: url("${(props) => props.$img}");
   background-size: cover;
+  background-position: center;
 `;

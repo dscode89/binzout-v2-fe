@@ -5,14 +5,13 @@ import { HeadedIconSection } from "./Sections/HeadedIconSection";
 import binImage from "../assets/Bin-1--Streamline-Ultimate.svg";
 import calendarImage from "../assets/Calendar-1--Streamline-Ultimate.svg";
 import moneyImage from "../assets/Money-Bag-Dollar--Streamline-Ultimate.svg";
-import { Paragraph } from "./Typography/Paragraph";
-import rightArrow from "../assets/Controls-Forward--Streamline-Ultimate.svg";
+import liverpoolBackground from "../assets/liverpool-ghibli.png";
 import { InstructionsSection } from "./Sections/InstructionsSection";
 
 export const Home = () => {
   return (
     <>
-      <Hero img={backgroundImg} />
+      <Hero img={liverpoolBackground} />
       <HorizontalFlexDiv
         $align="center"
         $justify="center"
