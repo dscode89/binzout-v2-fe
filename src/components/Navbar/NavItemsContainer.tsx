@@ -40,6 +40,8 @@ export const NavItemsContainer = () => {
       $align="center"
       $paddingX="1"
       $paddingY="1"
+      $widthPixels={false}
+      $width="auto"
     >
       {navItems.map((item: string) => {
         return (

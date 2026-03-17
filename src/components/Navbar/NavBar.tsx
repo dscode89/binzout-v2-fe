@@ -9,6 +9,9 @@ export const NavBar = () => {
       $align="center"
       $paddingX="2"
       $paddingY="1"
+      $widthPixels={false}
+      $width="80%"
+      $centered
     >
       <img src={logo} alt="binzout-logo" width="120px" />
       <NavItemsContainer />

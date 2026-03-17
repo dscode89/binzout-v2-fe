@@ -19,7 +19,6 @@ export const VerticalFlexDiv = styled.div<{
     props.$marginX && props.$marginY
       ? `${props.$marginX}em ${props.$marginY}em`
       : null};
-  border: 1px solid green;
   width: ${(props) =>
     props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
 `;

@@ -7,6 +7,9 @@ export const HorizontalFlexDiv = styled.div<{
   $paddingY: string;
   $marginX?: number;
   $marginY?: number;
+  $widthPixels?: boolean;
+  $width: string;
+  $centered?: boolean;
 }>`
   display: flex;
   justify-content: ${(props) => props.$justify};
@@ -15,6 +18,10 @@ export const HorizontalFlexDiv = styled.div<{
   margin: ${(props) =>
     props.$marginX && props.$marginY
       ? `${props.$marginX}em ${props.$marginY}em`
-      : null};
-  border: 1px solid red;
+      : props.$centered
+        ? `0 auto`
+        : null};
+
+  width: ${(props) =>
+    props.$widthPixels ? `${props.$width}px` : `${props.$width}`};
 `;
