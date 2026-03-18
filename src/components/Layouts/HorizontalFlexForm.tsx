@@ -19,6 +19,7 @@ export const HorizontalFlexForm = styled.form<{
   $blur?: boolean;
 }>`
   display: flex;
+  height: auto;
   justify-content: ${(props) => props.$justify};
   align-items: ${(props) => props.$align};
   padding: ${(props) => `${props.$paddingY}em ${props.$paddingX}em`};
@@ -30,7 +31,7 @@ export const HorizontalFlexForm = styled.form<{
         : null};
 
   width: ${(props) =>
-    props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
+    props.$widthPixels ? `${props.$width}` : `${props.$width}%`};
   background-color: ${(props) =>
     props.$backgroundColor ? props.$backgroundColor : "inherit"};
   border-radius: ${(props) =>

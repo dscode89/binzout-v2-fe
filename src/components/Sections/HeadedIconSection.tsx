@@ -19,7 +19,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
       $paddingX="0"
       $paddingY="0"
       $widthPixels={false}
-      $width={90}
+      $width="90"
     >
       {width > 500 ? (
         <Paragraph
@@ -46,7 +46,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
             return (
               <VerticalFlexDiv
                 $widthPixels
-                $width={300}
+                $width="300px"
                 $justify="center"
                 $align="center"
                 $paddingX="1"
@@ -74,7 +74,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
             return (
               <VerticalFlexDiv
                 $widthPixels
-                $width={300}
+                $width="300px"
                 $justify="center"
                 $align="center"
                 $paddingX="1"

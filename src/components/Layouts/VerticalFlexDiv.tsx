@@ -8,11 +8,12 @@ export const VerticalFlexDiv = styled.div<{
   $marginX?: number;
   $marginY?: number;
   $widthPixels?: boolean;
-  $width: number;
+  $width: string;
   $backgroundColor?: string;
 }>`
   display: flex;
   text-align: center;
+  height: auto;
   flex-direction: column;
   justify-content: ${(props) => props.$justify};
   align-items: ${(props) => props.$align};
@@ -22,7 +23,7 @@ export const VerticalFlexDiv = styled.div<{
       ? `${props.$marginX}em ${props.$marginY}em`
       : null};
   width: ${(props) =>
-    props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
+    props.$widthPixels ? `${props.$width}` : `${props.$width}%`};
   background-color: ${(props) =>
     props.$backgroundColor ? props.$backgroundColor : "inherit"};
 `;

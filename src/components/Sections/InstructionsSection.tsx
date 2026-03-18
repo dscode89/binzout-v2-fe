@@ -64,7 +64,7 @@ export const InstructionsSection = () => {
       $paddingX="5"
       $paddingY="5"
       $widthPixels={false}
-      $width={100}
+      $width="100"
       $backgroundColor="#cfaad3"
     >
       <Paragraph

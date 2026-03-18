@@ -24,7 +24,7 @@ export const HorizontalFlexDiv = styled.div<{
         : null};
 
   width: ${(props) =>
-    props.$widthPixels ? `${props.$width}px` : `${props.$width}%`};
+    props.$widthPixels ? `${props.$width}` : `${props.$width}%`};
   background-color: ${(props) =>
     props.$backgroundColor ? props.$backgroundColor : "inherit"};
 `;

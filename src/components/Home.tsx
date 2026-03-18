@@ -8,12 +8,14 @@ import liverpoolBackground from "../assets/liverpool-ghibli.png";
 import { InstructionsSection } from "./Sections/InstructionsSection";
 import { AbsoluteWrapper } from "./containers/AbsoluteWrapper";
 import { PostcodeSearchForm } from "./Forms/PostcodeSearchForm";
+import { useWindowDimensions } from "../hooks/usewindowDimensions";
 
 export const Home = () => {
+  const { width } = useWindowDimensions();
   return (
     <>
       <Hero img={liverpoolBackground}>
-        <AbsoluteWrapper $top={100} $left={50} $center>
+        <AbsoluteWrapper $top={width > 565 ? 100 : 50} $left={50} $center>
           <PostcodeSearchForm />
         </AbsoluteWrapper>
       </Hero>
