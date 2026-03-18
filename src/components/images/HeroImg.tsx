@@ -6,4 +6,5 @@ export const HeroImg = styled.div<{ $img: string }>`
   background-image: url("${(props) => props.$img}");
   background-size: cover;
   background-position: center;
+  position: relative;
 `;

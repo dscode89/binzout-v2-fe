@@ -50,7 +50,7 @@ export const InstructionsSection = () => {
           $color="#FFFFFF"
           $fontFamily="Cabin Sketch"
         >
-          Add to your calendar
+          Add it to your calendar
         </Paragraph>
       </HorizontalFlexDiv>
     );
@@ -106,7 +106,7 @@ export const InstructionsSection = () => {
         $color="#FFFFFF"
         $fontFamily="Cabin Sketch"
       >
-        Add to your calendar
+        Add it to your calendar
       </Paragraph>
     </VerticalFlexDiv>
   );
