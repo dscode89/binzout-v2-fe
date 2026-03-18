@@ -7,33 +7,14 @@ import moneyImage from "../assets/Money-Bag-Dollar--Streamline-Ultimate.svg";
 import liverpoolBackground from "../assets/liverpool-ghibli.png";
 import { InstructionsSection } from "./Sections/InstructionsSection";
 import { AbsoluteWrapper } from "./containers/AbsoluteWrapper";
-import { HorizontalFlexForm } from "./Layouts/HorizontalFlexForm";
-import { Button, TextField, useTheme } from "@mui/material";
+import { PostcodeSearchForm } from "./Forms/PostcodeSearchForm";
 
 export const Home = () => {
-  const purpleTheme = useTheme();
   return (
     <>
       <Hero img={liverpoolBackground}>
         <AbsoluteWrapper $top={100} $left={50} $center>
-          <HorizontalFlexForm
-            $justify="center"
-            $align="center"
-            $paddingX="0.5"
-            $paddingY="0.5"
-            $widthPixels
-            $width="auto"
-            $backgroundColor="rgba(0, 0, 0, 0.2)"
-            $borderRadius={5}
-            $applyBorder
-            $borderWidth={3}
-            $borderStyle="solid"
-            $borderColor={purpleTheme.palette.primary.main}
-            $blur
-          >
-            <TextField id="postcode-entry" label="Enter Postcode" />
-            <Button>Search</Button>
-          </HorizontalFlexForm>
+          <PostcodeSearchForm />
         </AbsoluteWrapper>
       </Hero>
       <HorizontalFlexDiv
