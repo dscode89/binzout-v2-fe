@@ -4,9 +4,11 @@ import rightArrow from "../../assets/Controls-Forward--Streamline-Ultimate.svg";
 import { useWindowDimensions } from "../../hooks/usewindowDimensions";
 import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { Image } from "../Images/Image";
+import { useTheme } from "@mui/material";
 
 export const InstructionsSection = () => {
   const { width } = useWindowDimensions();
+  const purpleTheme = useTheme();
 
   if (width > 1020) {
     return (
@@ -17,7 +19,7 @@ export const InstructionsSection = () => {
         $paddingY="5"
         $widthPixels={false}
         $width="100%"
-        $backgroundColor="#cfaad3"
+        $backgroundColor={purpleTheme.palette.primary.main}
       >
         <Paragraph
           $fontSize={2}

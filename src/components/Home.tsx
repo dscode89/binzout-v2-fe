@@ -8,9 +8,10 @@ import liverpoolBackground from "../assets/liverpool-ghibli.png";
 import { InstructionsSection } from "./Sections/InstructionsSection";
 import { AbsoluteWrapper } from "./containers/AbsoluteWrapper";
 import { HorizontalFlexForm } from "./Layouts/HorizontalFlexForm";
-import { Button, TextField } from "@mui/material";
+import { Button, TextField, useTheme } from "@mui/material";
 
 export const Home = () => {
+  const purpleTheme = useTheme();
   return (
     <>
       <Hero img={liverpoolBackground}>
@@ -22,8 +23,13 @@ export const Home = () => {
             $paddingY="0.5"
             $widthPixels
             $width="auto"
-            $backgroundColor="rgba(0, 0, 0, 0.5)"
+            $backgroundColor="rgba(0, 0, 0, 0.2)"
             $borderRadius={5}
+            $applyBorder
+            $borderWidth={3}
+            $borderStyle="solid"
+            $borderColor={purpleTheme.palette.primary.main}
+            $blur
           >
             <TextField id="postcode-entry" label="Enter Postcode" />
             <Button>Search</Button>

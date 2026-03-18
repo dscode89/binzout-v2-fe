@@ -12,6 +12,11 @@ export const HorizontalFlexForm = styled.form<{
   $centered?: boolean;
   $backgroundColor?: string;
   $borderRadius?: number;
+  $applyBorder?: boolean;
+  $borderWidth?: number;
+  $borderColor?: string;
+  $borderStyle?: string;
+  $blur?: boolean;
 }>`
   display: flex;
   justify-content: ${(props) => props.$justify};
@@ -30,4 +35,9 @@ export const HorizontalFlexForm = styled.form<{
     props.$backgroundColor ? props.$backgroundColor : "inherit"};
   border-radius: ${(props) =>
     props.$borderRadius ? `${props.$borderRadius}px` : "0px"};
+  border: ${(props) =>
+    props.$applyBorder
+      ? `${props.$borderWidth}px ${props.$borderStyle} ${props.$borderColor}`
+      : "none"};
+  backdrop-filter: ${(props) => (props.$blur ? "blur(10px)" : "")};
 `;
