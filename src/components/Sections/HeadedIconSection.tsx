@@ -1,3 +1,4 @@
+import { useTheme } from "@mui/material";
 import { useWindowDimensions } from "../../hooks/usewindowDimensions";
 import { Divider } from "../Layouts/Divider";
 import { HorizontalFlexDiv } from "../Layouts/HorizontalFlexDiv";
@@ -11,6 +12,7 @@ interface HeadedIconSectionProps {
 
 export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
   const { width } = useWindowDimensions();
+  const purpleTheme = useTheme();
 
   return (
     <VerticalFlexDiv
@@ -20,13 +22,14 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
       $paddingY="0"
       $widthPixels={false}
       $width="90"
+      $backgroundColor={purpleTheme.palette.primary.main}
     >
       {width > 500 ? (
         <Paragraph
           $fontSize={2}
           $fontWeight={600}
           $margin={1}
-          $color="#000000"
+          $color="#FFFFFF"
           $fontFamily="Cabin Sketch"
         >
           {title}
@@ -59,7 +62,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                   $fontSize={1}
                   $fontWeight={600}
                   $margin={0.3}
-                  $color="#000000"
+                  $color="#FFFFFF"
                   $fontFamily="Cabin Sketch"
                 >
                   {i.iconText}
@@ -87,14 +90,14 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                   $fontSize={1}
                   $fontWeight={600}
                   $margin={0.3}
-                  $color="#000000"
+                  $color="#FFFFFF"
                 >
                   {i.iconText}
                 </Paragraph>
 
                 <Divider
                   $width={80}
-                  $bgColor="#966fd6"
+                  $bgColor="#FFFFFF"
                   $marginX={1}
                   $height={1}
                 />

@@ -8,7 +8,6 @@ import { useTheme } from "@mui/material";
 
 export const InstructionsSection = () => {
   const { width } = useWindowDimensions();
-  const purpleTheme = useTheme();
 
   if (width > 1020) {
     return (
@@ -19,13 +18,13 @@ export const InstructionsSection = () => {
         $paddingY="5"
         $widthPixels={false}
         $width="100%"
-        $backgroundColor={purpleTheme.palette.primary.main}
+        $backgroundColor={"#FFFFFF"}
       >
         <Paragraph
           $fontSize={2}
           $fontWeight={600}
           $margin={1}
-          $color={"#FFFFFF"}
+          $color={"#000000"}
           $fontFamily="Cabin Sketch"
         >
           Enter your postcode
@@ -37,7 +36,7 @@ export const InstructionsSection = () => {
           $fontSize={2}
           $fontWeight={600}
           $margin={1}
-          $color="#FFFFFF"
+          $color="#000000"
           $fontFamily="Cabin Sketch"
         >
           View Your Bin Schedule
@@ -49,7 +48,7 @@ export const InstructionsSection = () => {
           $fontSize={2}
           $fontWeight={600}
           $margin={1}
-          $color="#FFFFFF"
+          $color="#00000"
           $fontFamily="Cabin Sketch"
         >
           Add it to your calendar
@@ -65,13 +64,13 @@ export const InstructionsSection = () => {
       $paddingY="5"
       $widthPixels={false}
       $width="100"
-      $backgroundColor="#cfaad3"
+      $backgroundColor={"#FFFFFF"}
     >
       <Paragraph
         $fontSize={2}
         $fontWeight={600}
         $margin={1}
-        $color={"#FFFFFF"}
+        $color={"#000000"}
         $fontFamily="Cabin Sketch"
       >
         Enter your postcode
@@ -88,7 +87,7 @@ export const InstructionsSection = () => {
         $fontSize={2}
         $fontWeight={600}
         $margin={1}
-        $color="#FFFFFF"
+        $color="#000000"
         $fontFamily="Cabin Sketch"
       >
         View Your bin schedule
@@ -105,7 +104,7 @@ export const InstructionsSection = () => {
         $fontSize={2}
         $fontWeight={600}
         $margin={1}
-        $color="#FFFFFF"
+        $color="#000000"
         $fontFamily="Cabin Sketch"
       >
         Add it to your calendar

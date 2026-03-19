@@ -9,9 +9,11 @@ import { InstructionsSection } from "./Sections/InstructionsSection";
 import { AbsoluteWrapper } from "./containers/AbsoluteWrapper";
 import { PostcodeSearchForm } from "./Forms/PostcodeSearchForm";
 import { useWindowDimensions } from "../hooks/usewindowDimensions";
+import { useTheme } from "@mui/material";
 
 export const Home = () => {
   const { width } = useWindowDimensions();
+  const purpleTheme = useTheme();
   return (
     <>
       <Hero img={liverpoolBackground}>
@@ -19,6 +21,7 @@ export const Home = () => {
           <PostcodeSearchForm />
         </AbsoluteWrapper>
       </Hero>
+      <InstructionsSection />
       <HorizontalFlexDiv
         $align="center"
         $justify="center"
@@ -27,6 +30,7 @@ export const Home = () => {
         $widthPixels={false}
         $width="80%"
         $centered
+        $backgroundColor={purpleTheme.palette.primary.main}
       >
         <HeadedIconSection
           title="Why choose Binzout?"
@@ -46,7 +50,6 @@ export const Home = () => {
           ]}
         />
       </HorizontalFlexDiv>
-      <InstructionsSection />
     </>
   );
 };
