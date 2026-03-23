@@ -10,6 +10,7 @@ import { AbsoluteWrapper } from "./containers/AbsoluteWrapper";
 import { PostcodeSearchForm } from "./Forms/PostcodeSearchForm";
 import { useWindowDimensions } from "../hooks/usewindowDimensions";
 import { useTheme } from "@mui/material";
+import { Footer } from "./Sections/Footer";
 
 export const Home = () => {
   const { width } = useWindowDimensions();
@@ -50,6 +51,7 @@ export const Home = () => {
           ]}
         />
       </HorizontalFlexDiv>
+      <Footer />
     </>
   );
 };
