@@ -15,6 +15,7 @@ export const HorizontalFlexDiv = styled.div<{
   $height?: string;
 }>`
   display: flex;
+  position: relative;
   justify-content: ${(props) => props.$justify};
   align-items: ${(props) => props.$align};
   padding: ${(props) => `${props.$paddingY}em ${props.$paddingX}em`};

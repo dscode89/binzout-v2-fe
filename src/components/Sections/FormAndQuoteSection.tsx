@@ -2,7 +2,6 @@ import { HorizontalFlexDiv } from "../Layouts/HorizontalFlexDiv";
 import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { ImprovementsForm } from "../Forms/ImprovementsForm";
 import { QuoteSection } from "./QuoteSection";
-import { quotes } from "../../data/quotes";
 
 export const FormAndQuoteSection = () => {
   return (

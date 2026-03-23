@@ -4,6 +4,9 @@ import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { VerticalFlexForm } from "../Layouts/VerticalFlexForm";
 import { Paragraph } from "../Typography/Paragraph";
 import { useWindowDimensions } from "../../hooks/usewindowDimensions";
+import { AbsoluteWrapper } from "../containers/AbsoluteWrapper";
+import { RightPointedTriangle } from "../shapes/RightPointedTriangle";
+import { LeftPointedTriangle } from "../shapes/LeftPointedTriangle";
 
 export const ImprovementsForm = () => {
   const { width } = useWindowDimensions();
@@ -19,6 +22,23 @@ export const ImprovementsForm = () => {
         $backgroundColor="#000000"
         $height="100%"
       >
+        <AbsoluteWrapper $bottom={0} $left={0}>
+          <RightPointedTriangle
+            $leftThickness={100}
+            $topThickness={225}
+            $bottomThickness={0}
+            $triangleColor="#C1E1C1"
+          />
+        </AbsoluteWrapper>
+
+        <AbsoluteWrapper $top={0} $right={0}>
+          <LeftPointedTriangle
+            $rightThickness={100}
+            $topThickness={0}
+            $bottomThickness={225}
+            $triangleColor="#A7C7E7"
+          />
+        </AbsoluteWrapper>
         <Paragraph
           $fontSize={2}
           $fontWeight={600}

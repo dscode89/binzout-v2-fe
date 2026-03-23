@@ -4,7 +4,8 @@ import { quotes } from "../../data/quotes";
 import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { Paragraph } from "../Typography/Paragraph";
 import { purpleTheme } from "../../themes/themes";
-import backgroundBinImg from "../../assets/Bin-1--Streamline-Ultimate.svg";
+import { AbsoluteWrapper } from "../containers/AbsoluteWrapper";
+import { LeftPointedTriangle } from "../shapes/LeftPointedTriangle";
 
 export const QuoteSection = () => {
   const [sliderRef, instanceRef] = useKeenSlider(
@@ -43,7 +44,6 @@ export const QuoteSection = () => {
             $paddingY="1"
             className="keen-slider__slide"
             $height="100%"
-            $backgroundImg={backgroundBinImg}
           >
             <Paragraph
               $color="#000000"

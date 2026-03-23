@@ -18,6 +18,7 @@ export const VerticalFlexDiv = styled.div<{
   text-align: center;
   height: auto;
   flex-direction: column;
+  position: relative;
   justify-content: ${(props) => props.$justify};
   align-items: ${(props) => props.$align};
   padding: ${(props) => `${props.$paddingY}em ${props.$paddingX}em`};

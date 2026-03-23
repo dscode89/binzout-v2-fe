@@ -42,8 +42,8 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
           $width="100%"
           $align="center"
           $justify="space-around"
-          $paddingX="0"
-          $paddingY="0"
+          $paddingX="1"
+          $paddingY="1"
           $backgroundColor={purpleTheme.palette.primary.dark}
         >
           {icons.map(
@@ -57,12 +57,12 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                   $align="center"
                   $paddingX="1"
                   $paddingY="1"
-                  $marginX={1}
+                  $marginX={0}
                   $marginY={0}
                 >
                   <img src={i.icon} alt="an icon" width="75px" />
                   <Paragraph
-                    $fontSize={1}
+                    $fontSize={1.3}
                     $fontWeight={600}
                     $margin={0.3}
                     $color="#FFFFFF"
@@ -88,7 +88,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                   $align="center"
                   $paddingX="1"
                   $paddingY="1"
-                  $marginX={1}
+                  $marginX={0}
                   $marginY={0}
                   $backgroundColor={purpleTheme.palette.primary.dark}
                 >
