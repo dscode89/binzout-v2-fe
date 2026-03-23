@@ -22,7 +22,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
       $paddingY="0"
       $widthPixels={false}
       $width="90"
-      $backgroundColor={purpleTheme.palette.primary.main}
+      $backgroundColor={purpleTheme.palette.primary.dark}
     >
       {width > 500 ? (
         <Paragraph
@@ -44,6 +44,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
           $justify="space-around"
           $paddingX="0"
           $paddingY="0"
+          $backgroundColor={purpleTheme.palette.primary.dark}
         >
           {icons.map((i: { icon: string; iconText: string }) => {
             return (
@@ -84,6 +85,7 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
                 $paddingY="1"
                 $marginX={1}
                 $marginY={0}
+                $backgroundColor={purpleTheme.palette.primary.dark}
               >
                 <img src={i.icon} alt="an icon" width="75px" />
                 <Paragraph

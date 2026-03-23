@@ -54,6 +54,10 @@ export const PostcodeSearchForm = () => {
                 "& .MuiFormLabel-root": {
                   color: purpleTheme.palette.primary.dark,
                 },
+
+                "& .MuiInputLabel-outlined": {
+                  color: purpleTheme.palette.primary.dark,
+                },
               }}
             />
             <Button
@@ -105,6 +109,10 @@ export const PostcodeSearchForm = () => {
                 },
 
                 "& .MuiFormLabel-root": {
+                  color: purpleTheme.palette.primary.dark,
+                },
+
+                "& .MuiInputLabel-outlined": {
                   color: purpleTheme.palette.primary.dark,
                 },
               }}

@@ -30,7 +30,7 @@ export const Home = () => {
         $widthPixels={false}
         $width="80%"
         $centered
-        $backgroundColor={purpleTheme.palette.primary.main}
+        $backgroundColor={purpleTheme.palette.primary.dark}
       >
         <HeadedIconSection
           title="Why choose Binzout?"
