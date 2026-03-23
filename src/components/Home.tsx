@@ -38,14 +38,17 @@ export const Home = () => {
           title="Why choose Binzout?"
           icons={[
             {
+              iconId: 1,
               icon: binImage,
               iconText: "Track your bin schedule",
             },
             {
+              iconId: 2,
               icon: calendarImage,
               iconText: "Save your bin schedule",
             },
             {
+              iconId: 3,
               icon: moneyImage,
               iconText: "Avoid fines",
             },

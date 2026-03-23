@@ -7,7 +7,7 @@ import { Paragraph } from "../Typography/Paragraph";
 
 interface HeadedIconSectionProps {
   title: string;
-  icons: { icon: string; iconText: string }[];
+  icons: { icon: string; iconText: string; iconId: number }[];
 }
 
 export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
@@ -46,66 +46,72 @@ export const HeadedIconSection = ({ title, icons }: HeadedIconSectionProps) => {
           $paddingY="0"
           $backgroundColor={purpleTheme.palette.primary.dark}
         >
-          {icons.map((i: { icon: string; iconText: string }) => {
-            return (
-              <VerticalFlexDiv
-                $widthPixels
-                $width="300px"
-                $justify="center"
-                $align="center"
-                $paddingX="1"
-                $paddingY="1"
-                $marginX={1}
-                $marginY={0}
-              >
-                <img src={i.icon} alt="an icon" width="75px" />
-                <Paragraph
-                  $fontSize={1}
-                  $fontWeight={600}
-                  $margin={0.3}
-                  $color="#FFFFFF"
-                  $fontFamily="Cabin Sketch"
+          {icons.map(
+            (i: { icon: string; iconText: string; iconId: number }) => {
+              return (
+                <VerticalFlexDiv
+                  key={i.iconId}
+                  $widthPixels
+                  $width="300px"
+                  $justify="center"
+                  $align="center"
+                  $paddingX="1"
+                  $paddingY="1"
+                  $marginX={1}
+                  $marginY={0}
                 >
-                  {i.iconText}
-                </Paragraph>
-              </VerticalFlexDiv>
-            );
-          })}
+                  <img src={i.icon} alt="an icon" width="75px" />
+                  <Paragraph
+                    $fontSize={1}
+                    $fontWeight={600}
+                    $margin={0.3}
+                    $color="#FFFFFF"
+                    $fontFamily="Cabin Sketch"
+                  >
+                    {i.iconText}
+                  </Paragraph>
+                </VerticalFlexDiv>
+              );
+            },
+          )}
         </HorizontalFlexDiv>
       ) : (
         <>
-          {icons.map((i: { icon: string; iconText: string }) => {
-            return (
-              <VerticalFlexDiv
-                $widthPixels
-                $width="300px"
-                $justify="center"
-                $align="center"
-                $paddingX="1"
-                $paddingY="1"
-                $marginX={1}
-                $marginY={0}
-                $backgroundColor={purpleTheme.palette.primary.dark}
-              >
-                <img src={i.icon} alt="an icon" width="75px" />
-                <Paragraph
-                  $fontSize={1}
-                  $fontWeight={600}
-                  $margin={0.3}
-                  $color="#FFFFFF"
-                >
-                  {i.iconText}
-                </Paragraph>
-
-                <Divider
-                  $width={80}
-                  $bgColor="#FFFFFF"
+          {icons.map(
+            (i: { icon: string; iconText: string; iconId: number }) => {
+              return (
+                <VerticalFlexDiv
+                  key={i.iconId}
+                  $widthPixels
+                  $width="300px"
+                  $justify="center"
+                  $align="center"
+                  $paddingX="1"
+                  $paddingY="1"
                   $marginX={1}
-                  $height={1}
-                />
-              </VerticalFlexDiv>
-            );
-          })}
+                  $marginY={0}
+                  $backgroundColor={purpleTheme.palette.primary.dark}
+                >
+                  <img src={i.icon} alt="an icon" width="75px" />
+                  <Paragraph
+                    $fontSize={1}
+                    $fontWeight={600}
+                    $margin={0.3}
+                    $color="#FFFFFF"
+                  >
+                    {i.iconText}
+                  </Paragraph>
+
+                  <Divider
+                    $width={80}
+                    $bgColor="#FFFFFF"
+                    $marginX={1}
+                    $height={1}
+                  />
+                </VerticalFlexDiv>
+              );
+            },
+          )}
         </>
       )}
     </VerticalFlexDiv>

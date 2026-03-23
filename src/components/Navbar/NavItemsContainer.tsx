@@ -43,10 +43,10 @@ export const NavItemsContainer = () => {
       $widthPixels={false}
       $width="auto"
     >
-      {navItems.map((item: string) => {
+      {navItems.map((i: { item: string; itemId: number }) => {
         return (
-          <NavItem $marginX="1" $marginY="0" href={`/${item}`}>
-            {item}
+          <NavItem key={i.itemId} $marginX="1" $marginY="0" href={`/${i.item}`}>
+            {i.item}
           </NavItem>
         );
       })}
