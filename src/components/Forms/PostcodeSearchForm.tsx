@@ -38,7 +38,7 @@ export const PostcodeSearchForm = () => {
                 borderColor: purpleTheme.palette.primary.dark,
 
                 "& fieldset": {
-                  borderColor: purpleTheme.palette.primary.main,
+                  borderColor: purpleTheme.palette.primary.dark,
                 },
 
                 "&.Mui-focused fieldset": {
@@ -99,7 +99,7 @@ export const PostcodeSearchForm = () => {
                 borderColor: purpleTheme.palette.primary.dark,
 
                 "& fieldset": {
-                  borderColor: purpleTheme.palette.primary.main,
+                  borderColor: purpleTheme.palette.primary.dark,
                 },
 
                 "&.Mui-focused fieldset": {

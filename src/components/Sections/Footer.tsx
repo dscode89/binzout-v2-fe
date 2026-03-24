@@ -10,7 +10,7 @@ export const Footer = () => {
       $width="100"
       $justify="space-between"
       $align="center"
-      $paddingX="0.5"
+      $paddingX="1"
       $paddingY="1"
       $backgroundColor="#2e2e33"
       $color="#FFFFFF"

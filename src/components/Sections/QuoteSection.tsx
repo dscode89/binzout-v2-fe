@@ -4,8 +4,6 @@ import { quotes } from "../../data/quotes";
 import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { Paragraph } from "../Typography/Paragraph";
 import { purpleTheme } from "../../themes/themes";
-import { AbsoluteWrapper } from "../containers/AbsoluteWrapper";
-import { LeftPointedTriangle } from "../shapes/LeftPointedTriangle";
 
 export const QuoteSection = () => {
   const [sliderRef, instanceRef] = useKeenSlider(
@@ -71,9 +69,9 @@ export const QuoteSection = () => {
             </Paragraph>
 
             <Paragraph
-              $color="#000000"
-              $fontSize={1}
-              $fontWeight={500}
+              $color={purpleTheme.palette.primary.dark}
+              $fontSize={1.1}
+              $fontWeight={800}
               $fontFamily="Cabin Sketch"
               $margin={1}
             >

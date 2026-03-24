@@ -4,7 +4,6 @@ import rightArrow from "../../assets/Controls-Forward--Streamline-Ultimate.svg";
 import { useWindowDimensions } from "../../hooks/usewindowDimensions";
 import { VerticalFlexDiv } from "../Layouts/VerticalFlexDiv";
 import { Image } from "../Images/Image";
-import { useTheme } from "@mui/material";
 
 export const InstructionsSection = () => {
   const { width } = useWindowDimensions();

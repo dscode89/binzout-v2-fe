@@ -15,4 +15,5 @@ export const AbsoluteWrapper = styled.div<{
   right: ${(props) => props.$right}%;
   padding: ${(props) => props.$padding}em;
   transform: ${(props) => (props.$center ? `translate(-50%, -50%)` : "")};
+  z-index: 10;
 `;

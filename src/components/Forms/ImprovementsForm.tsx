@@ -90,7 +90,7 @@ export const ImprovementsForm = () => {
               },
 
               "& .MuiOutlinedInput-input": {
-                color: purpleTheme.palette.primary.dark,
+                color: purpleTheme.palette.primary.light,
               },
             }}
           />
@@ -98,11 +98,12 @@ export const ImprovementsForm = () => {
           <Button
             type="submit"
             sx={{
-              color: "#000000",
+              color: "#FFFFFF",
               backgroundColor: purpleTheme.palette.primary.dark,
               height: "55px",
               marginTop: "1em",
               width: "400px",
+              fontWeight: 550,
             }}
           >
             Submit
